@@ -17,10 +17,12 @@ from django.contrib import admin
 from django.urls import path
 from student.views import home_page, about_page
 from product.views import product_page
+from professors.views import professors
 
 urlpatterns = [
     path('', home_page),
     path('about/', about_page),
     path('product/',product_page),
+    path('prof/',professors),
     path('admin/', admin.site.urls),
 ]
